@@ -1,0 +1,21 @@
+# phpstorm project files
+.idea
+
+# composer vendor dir
+/vendor
+/tools/php-cs-fixer/vendor
+.php-cs-fixer.cache
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant

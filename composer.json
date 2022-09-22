@@ -1,0 +1,19 @@
+{
+  "name": "3dgroup/yii2-exporter",
+  "description": "A basic CSV exporter for Yii2",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "3dgroup",
+      "email": "dean.sanderson@3dgroupuk.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "threedgroup\\exporter\\": "src/"
+    }
+  },
+  "require": {}
+}
