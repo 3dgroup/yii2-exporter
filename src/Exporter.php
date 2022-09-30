@@ -91,11 +91,13 @@ class Exporter
         $startDate = $this->exporter->dateFrom ?? null;
         $endDate = $this->exporter->dateTo ?? null;
 
-        $fileName .= ' [';
-        $fileName .= $startDate->format('d-m-Y');
-        $fileName .= ' until ';
-        $fileName .= $endDate ? $endDate->format('d-m-Y') : (new \DateTimeImmutable())->format('d-m-Y');
-        $fileName .= ']';
+        if ($startDate) {
+            $fileName .= ' [';
+            $fileName .= $startDate->format('d-m-Y');
+            $fileName .= ' until ';
+            $fileName .= $endDate ? $endDate->format('d-m-Y') : (new \DateTimeImmutable())->format('d-m-Y');
+            $fileName .= ']';
+        }
 
         return $fileName . '.csv';
     }
